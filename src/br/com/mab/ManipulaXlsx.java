@@ -22,7 +22,6 @@ public class ManipulaXlsx {
 		try {
 			arquivoEntrada = new FileInputStream(new File(caminhoArquivo));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -31,7 +30,6 @@ public class ManipulaXlsx {
 		try {
 			workbook = new XSSFWorkbook(arquivoEntrada);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -52,7 +50,6 @@ public class ManipulaXlsx {
         try {
 			arquivoEntrada.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 		
